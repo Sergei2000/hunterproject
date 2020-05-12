@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/hunterproject.dir/main.cpp.o  -o hunterproject 
