@@ -23,6 +23,6 @@ find_package(Boost CONFIG REQUIRED COMPONENTS
 hunter_add_package(rocksdb)
 find_package(RocksDB CONFIG REQUIRED)
 add_executable(hunterproject main.cpp)
-target_include_directories(hunterproject  INTERFACE $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>)
+#target_include_directories(hunterproject  INTERFACE $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>)
 target_link_libraries(hunterproject pthread Boost::log Boost::thread Boost::program_options Boost::log_setup Boost::filesystem
         RocksDB::rocksdb pthread)

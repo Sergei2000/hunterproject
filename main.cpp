@@ -4,15 +4,13 @@
 int main(int argc,char** argv)
 {
     std::string loglevel,pathin,pathout;
-
     try {
         boost::program_options::options_description desc("Allowed options");
         desc.add_options()
                 ("log-level",boost::program_options::value<std::string>(), "logirovanye")
                 ("thread-count", boost::program_options::value<int>(), "potoki")
                 ("output",boost::program_options::value<std::string>(),"path out")
-                ("input",boost::program_options::value<std::string>(),"path in")
-                ;
+                ("input",boost::program_options::value<std::string>(),"path in");
 
         boost::program_options::variables_map vm;
         store(parse_command_line(argc, argv,desc), vm);
@@ -57,7 +55,6 @@ int main(int argc,char** argv)
     catch(...) {
         std::cout <<"lazha" << "\n";
     }
-
     boost::log::register_simple_formatter_factory<boost::log
     ::trivial::severity_level, char>(loglevel);
     boost::log::add_file_log(
