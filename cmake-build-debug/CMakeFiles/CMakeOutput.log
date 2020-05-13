@@ -815,3 +815,65 @@ make[1]: выход из каталога «/home/sergei/Desktop/hunterproject/c
     Feature record: CXX_FEATURE:0cxx_variable_templates
     Feature record: CXX_FEATURE:0cxx_variadic_macros
     Feature record: CXX_FEATURE:0cxx_variadic_templates
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/sergei/Desktop/hunterproject/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b1325/fast 
+make[1]: вход в каталог «/home/sergei/Desktop/hunterproject/cmake-build-debug/CMakeFiles/CMakeTmp»
+/usr/bin/make -f CMakeFiles/cmTC_b1325.dir/build.make CMakeFiles/cmTC_b1325.dir/build
+make[2]: вход в каталог «/home/sergei/Desktop/hunterproject/cmake-build-debug/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_b1325.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_b1325.dir/CheckIncludeFile.c.o   -c /home/sergei/Desktop/hunterproject/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_b1325
+/home/sergei/Desktop/clion-2019.2.1/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b1325.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_b1325.dir/CheckIncludeFile.c.o  -o cmTC_b1325 
+make[2]: выход из каталога «/home/sergei/Desktop/hunterproject/cmake-build-debug/CMakeFiles/CMakeTmp»
+make[1]: выход из каталога «/home/sergei/Desktop/hunterproject/cmake-build-debug/CMakeFiles/CMakeTmp»
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/sergei/Desktop/hunterproject/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4e651/fast 
+make[1]: вход в каталог «/home/sergei/Desktop/hunterproject/cmake-build-debug/CMakeFiles/CMakeTmp»
+/usr/bin/make -f CMakeFiles/cmTC_4e651.dir/build.make CMakeFiles/cmTC_4e651.dir/build
+make[2]: вход в каталог «/home/sergei/Desktop/hunterproject/cmake-build-debug/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_4e651.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_4e651.dir/CheckFunctionExists.c.o   -c /home/sergei/Desktop/clion-2019.2.1/bin/cmake/linux/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4e651
+/home/sergei/Desktop/clion-2019.2.1/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4e651.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_4e651.dir/CheckFunctionExists.c.o  -o cmTC_4e651 -lpthread 
+make[2]: выход из каталога «/home/sergei/Desktop/hunterproject/cmake-build-debug/CMakeFiles/CMakeTmp»
+make[1]: выход из каталога «/home/sergei/Desktop/hunterproject/cmake-build-debug/CMakeFiles/CMakeTmp»
+
+
+Determining if the clock_gettime exist passed with the following output:
+Change Dir: /home/sergei/Desktop/hunterproject/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d35ee/fast 
+make[1]: вход в каталог «/home/sergei/Desktop/hunterproject/cmake-build-debug/CMakeFiles/CMakeTmp»
+/usr/bin/make -f CMakeFiles/cmTC_d35ee.dir/build.make CMakeFiles/cmTC_d35ee.dir/build
+make[2]: вход в каталог «/home/sergei/Desktop/hunterproject/cmake-build-debug/CMakeFiles/CMakeTmp»
+Building CXX object CMakeFiles/cmTC_d35ee.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -std=gnu++1z -o CMakeFiles/cmTC_d35ee.dir/CheckSymbolExists.cxx.o -c /home/sergei/Desktop/hunterproject/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_d35ee
+/home/sergei/Desktop/clion-2019.2.1/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d35ee.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_d35ee.dir/CheckSymbolExists.cxx.o  -o cmTC_d35ee 
+make[2]: выход из каталога «/home/sergei/Desktop/hunterproject/cmake-build-debug/CMakeFiles/CMakeTmp»
+make[1]: выход из каталога «/home/sergei/Desktop/hunterproject/cmake-build-debug/CMakeFiles/CMakeTmp»
+
+File /home/sergei/Desktop/hunterproject/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <time.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef clock_gettime
+  return ((int*)(&clock_gettime))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+

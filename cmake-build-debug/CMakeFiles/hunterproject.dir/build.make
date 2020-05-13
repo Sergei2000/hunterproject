@@ -79,6 +79,12 @@ hunterproject_EXTERNAL_OBJECTS =
 
 hunterproject: CMakeFiles/hunterproject.dir/main.cpp.o
 hunterproject: CMakeFiles/hunterproject.dir/build.make
+hunterproject: /home/sergei/.hunter/_Base/9a3594a/744cf2f/48401e9/Install/lib/libboost_log-mt-d-x64.a
+hunterproject: /home/sergei/.hunter/_Base/9a3594a/744cf2f/48401e9/Install/lib/libboost_thread-mt-d-x64.a
+hunterproject: /home/sergei/.hunter/_Base/9a3594a/744cf2f/48401e9/Install/lib/libboost_program_options-mt-d-x64.a
+hunterproject: /home/sergei/.hunter/_Base/9a3594a/744cf2f/48401e9/Install/lib/libboost_log_setup-mt-d-x64.a
+hunterproject: /home/sergei/.hunter/_Base/9a3594a/744cf2f/48401e9/Install/lib/libboost_filesystem-mt-d-x64.a
+hunterproject: /home/sergei/.hunter/_Base/9a3594a/744cf2f/48401e9/Install/lib/librocksdbd.a
 hunterproject: CMakeFiles/hunterproject.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sergei/Desktop/hunterproject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable hunterproject"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hunterproject.dir/link.txt --verbose=$(VERBOSE)
